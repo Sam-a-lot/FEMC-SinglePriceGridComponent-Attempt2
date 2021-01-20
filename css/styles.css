@@ -1,0 +1,12 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
