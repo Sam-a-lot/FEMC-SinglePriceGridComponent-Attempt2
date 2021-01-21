@@ -1,6 +1,7 @@
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  font-size: 16px;
   /* color: #E5EFF5; */
   color: white; /* need to figure out if text is white with e5eff5 as paragraph color */
   background-color: #e6eff6;
@@ -11,13 +12,23 @@ h2 {
   color: #2bb3b1;
 }
 
+/* section {
+  display: flex;
+  align-content: center;
+} */
+
+/* footer {
+  display: flex;
+  flex-shrink: 0;
+} */
+
 .container {
   border-radius: 10px;
-  box-shadow: 5px;
   display: grid;
   grid-template:  ". top top ." 1fr
                   ". sub why ." 1fr
-                  /1fr 1fr 1fr 1fr;
+                  / 1fr 300px 300px 1fr;
+  align-self: center;
 }
 
 .join {
