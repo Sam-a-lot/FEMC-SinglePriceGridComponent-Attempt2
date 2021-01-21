@@ -1,12 +1,70 @@
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  /* color: #E5EFF5; */
+  color: white; /* need to figure out if text is white with e5eff5 as paragraph color */
+  background-color: #e6eff6;
 }
 
 h2 {
   font-weight: 700;
+  color: #2bb3b1;
 }
 
+.container {
+  border-radius: 10px;
+  box-shadow: 5px;
+  display: grid;
+  grid-template:  ". top top ." 1fr
+                  ". sub why ." 1fr
+                  /1fr 1fr 1fr 1fr;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.join {
+  grid-area: top;
+  align-self: end;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 3px #d7e1ea; /*  why not working?? */
+  padding: 30px;
+}
+
+.subscription {
+  background-color: #2bb3b1;
+  grid-area: sub;
+  border-radius: 0 0 0 10px;
+  padding: 30px;
+}
+
+.why-us {
+  background-color: #4abebd;
+  grid-area: why;
+  border-radius: 0 0 10px 0;
+  padding: 30px;
+}
+
+.per-month {
+  opacity: 0.5;
+}
+
+.top-h3 {
+  color: #C0DF34;
+}
+
+.top-par {
+  color: #98A6BD;
+}
+
+.why-us-par {
+  opacity: 0.6;
+  line-height: .5;
+ }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3E52A3;
+}
