@@ -45,13 +45,22 @@ button {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
+}
+
+@media screen and (max-width: 375px) {
   .join {
     grid-row-start: 1;
   }
+}
+
+@media screen and (max-width: 375px) {
   .subscription {
     grid-row-start: 2;
     border-radius: 0 0 0 0;
   }
+}
+
+@media screen and (max-width: 375px) {
   .why-us {
     grid-row-start: 3;
     border-radius: 0 0 10px 10px;
