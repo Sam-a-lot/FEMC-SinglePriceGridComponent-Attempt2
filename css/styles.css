@@ -39,34 +39,6 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
-  .container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .join {
-    grid-row-start: 1;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .subscription {
-    grid-row-start: 2;
-    border-radius: 0 0 0 0;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .why-us {
-    grid-row-start: 3;
-    border-radius: 0 0 10px 10px;
-  }
-}
-
 .container {
   display: grid;
   grid-template:  ". top top ." auto
@@ -135,4 +107,29 @@ button {
 
 .attribution a {
   color: #3E52A3;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  .join {
+    grid-row-start: 1;
+    border-radius: 10px 10px 0 0;
+  }
+  .subscription {
+    grid-row-start: 2;
+    border-radius: 0 0 0 0;
+    width: auto;
+  }
+  .why-us {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    border-radius: 0 0 10px 10px;
+  }
 }
