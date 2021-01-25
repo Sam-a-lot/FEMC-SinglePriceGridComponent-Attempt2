@@ -109,27 +109,33 @@ button {
   color: #3E52A3;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 375px) {
   body {
     font-size: 14px;
   }
+  button {
+    width: 100%;
+  }
+
   .container {
-    display: flex;
-    flex-direction: column;
+    height: 90%;
+    display: grid;
+    grid-template:  "top" 1fr
+                    "sub" 1fr
+                    "why" 1fr
+                    / minmax(100px, 90%);
     justify-content: center;
   }
   .join {
-    grid-row-start: 1;
     border-radius: 10px 10px 0 0;
+    padding: 25px;
   }
   .subscription {
-    grid-row-start: 2;
     border-radius: 0 0 0 0;
-    /* width: auto; */
+    padding: 25px;
   }
   .why-us {
-    grid-row-start: 3;
-    grid-column-start: 1;
     border-radius: 0 0 10px 10px;
+    padding: 25px;
   }
 }
