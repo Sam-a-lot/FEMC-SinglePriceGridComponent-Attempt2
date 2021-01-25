@@ -116,7 +116,7 @@ button {
   .container {
     display: flex;
     flex-direction: column;
-    margin: 20px 10px;
+    justify-content: center;
   }
   .join {
     grid-row-start: 1;
@@ -125,7 +125,7 @@ button {
   .subscription {
     grid-row-start: 2;
     border-radius: 0 0 0 0;
-    width: auto;
+    /* width: auto; */
   }
   .why-us {
     grid-row-start: 3;
